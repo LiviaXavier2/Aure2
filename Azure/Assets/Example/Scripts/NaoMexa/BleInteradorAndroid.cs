@@ -19,7 +19,7 @@ public class BleInteradorAndroid : MonoBehaviour,IConexao
     private string _deviceUuid = string.Empty;
     public SubscribeToCharacteristic sb;
     [SerializeField]
-    private string _servico, _caracteristica;
+    private string _servico, _caracteristicaTX, _caracteristicaRX;
 
     Button connectarBtn, desconectarBtn, enviarOnBtn, enviarOffBtn;
     Action<String> Receber;
@@ -29,7 +29,8 @@ public class BleInteradorAndroid : MonoBehaviour,IConexao
     //você deseja usar
     public BleInteradorAndroid(TextMeshProUGUI p_status,int p_scanTime,string p_nomeDispositivo,
                                                                        string p_servico,
-                                                                       string p_caracteristica,
+                                                                       string p_caracteristicaTX,
+                                                                       string p_caracteristicaRX,
                                                                        Action<String> p_receber,
                                                                        Button p_connectar,
                                                                        Button p_desconectar,
@@ -37,8 +38,9 @@ public class BleInteradorAndroid : MonoBehaviour,IConexao
                                                                        Button p_enviarOff
                                                                     )
     {
-        _caracteristica= p_caracteristica;
-        _scanTime=p_scanTime;
+        _caracteristicaTX = p_caracteristicaTX;
+        _caracteristicaRX = p_caracteristicaRX;
+        _scanTime =p_scanTime;
         status=p_status;
         nomeDispositivo=p_nomeDispositivo;
         connectarBtn = p_connectar;
@@ -61,7 +63,7 @@ public class BleInteradorAndroid : MonoBehaviour,IConexao
         //aqui
         //ATENÇÃO, BLUETOOTH LOW ENERGY SÓ RECEBE 20 BYTES DE CADA VEZ, CONTANDO \r\n
         _deviceUuid = _dvcUuid;
-        sb = new SubscribeToCharacteristic(_deviceUuid, _servico, _caracteristica, (byte[] value) =>
+        sb = new SubscribeToCharacteristic(_deviceUuid, _servico, _caracteristicaTX, (byte[] value) =>
         {
             //status.text = Encoding.ASCII.GetString(value);
             OnReceber(value);
@@ -144,7 +146,7 @@ public class BleInteradorAndroid : MonoBehaviour,IConexao
     public void Enviar(string dados)
     {
         //ATENÇÃO, BLUETOOTH LOW ENERGY SÓ TRANSMITE 20 BYTES DE CADA VEZ, CONTANDO \r\n
-        WriteToCharacteristic w = new WriteToCharacteristic(_deviceUuid, _servico, _caracteristica, dados);
+        WriteToCharacteristic w = new WriteToCharacteristic(_deviceUuid, _servico, _caracteristicaRX, dados);
         w.Start();
     }
 

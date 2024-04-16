@@ -7,6 +7,7 @@ using UnityEngine.Android;
 using UnityEngine.UI;
 using System.Text;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BleInterador : MonoBehaviour
 {
@@ -15,9 +16,11 @@ public class BleInterador : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI status;
     [SerializeField]
-    string nomeDispositivo;
+    private string _servico = "0000ffe0-0000-1000-8000-00805f9b34fb",
+                   _caracteristicaRX = "0000ffe1-0000-1000-8000-00805f9b34fb", 
+                   _caracteristicaTX = "0000ffe2-0000-1000-8000-00805f9b34fb";
     [SerializeField]
-    private string _servico = "ffe0", _caracteristica = "ffe1";
+    string nomeDispositivo;
 
 
     //aqui
@@ -36,10 +39,10 @@ public class BleInterador : MonoBehaviour
     private void Start()
     {
 #if !UNITY_EDITOR
-        conexao = new BleInteradorAndroid(status, _scanTime,nomeDispositivo,_servico,_caracteristica,Receber, botaoConectar,botaoDesconectar,null,null);
+        conexao = new BleInteradorAndroid(status, _scanTime,nomeDispositivo,_servico,_caracteristicaTX,_caracteristicaRX,Receber, botaoConectar,botaoDesconectar,null,null);
 #endif
 #if UNITY_EDITOR
-        conexao = new BleInteradorWin(status, _scanTime, nomeDispositivo, _servico, _caracteristica,Receber, botaoConectar, botaoDesconectar, null, null);
+        conexao = new BleInteradorWin(status, _scanTime, nomeDispositivo, _servico, _caracteristicaTX,_caracteristicaRX,Receber, botaoConectar, botaoDesconectar, null, null);
 #endif
         botaoConectar.interactable = true;
         botaoDesconectar.interactable = false;
@@ -87,3 +90,15 @@ public class BleInterador : MonoBehaviour
         status.text = dados;
     }
 }
+
+//Programação da UI aqui - botões
+public class SceneTransition
+{
+    // Função chamada quando um botão é clicado
+    public void ChangeScene(string sceneName)
+    {
+        // Carrega a cena com o nome especificado
+        SceneManager.LoadScene(sceneName);
+    }
+}
+

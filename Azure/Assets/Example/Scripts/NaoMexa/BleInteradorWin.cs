@@ -8,7 +8,7 @@ using System;
 using UnityEditor;
 using System.Threading.Tasks;
 
-public class BleInteradorWin :  IConexao
+public class BleInteradorWin : IConexao
 {
     TextMeshProUGUI status;
     private int _scanTime;
@@ -16,7 +16,7 @@ public class BleInteradorWin :  IConexao
     private string nomeDispositivo;
 
     private string _deviceUuid = string.Empty;
-    private string _servico, _caracteristica;
+    private string _servico, _caracteristicaTX, _caracteristicaRX;
 
     Button connectarBtn, desconectarBtn, enviarOnBtn, enviarOffBtn;
     private bool _isScanning = false;
@@ -29,7 +29,8 @@ public class BleInteradorWin :  IConexao
     //você deseja usar
     public BleInteradorWin(TextMeshProUGUI p_status, int p_scanTime, string p_nomeDispositivo,
                                                                        string p_servico,
-                                                                       string p_caracteristica,
+                                                                       string p_caracteristicaTX,
+                                                                       string p_caracteristicaRX,
                                                                        Action<String> p_receber,
                                                                        Button p_connectar,
                                                                        Button p_desconectar,
@@ -38,7 +39,8 @@ public class BleInteradorWin :  IConexao
                                                                     )
     {
         _servico = "0000" + p_servico + "-0000-1000-8000-00805f9b34fb";
-        _caracteristica = "0000"+p_caracteristica+"-0000-1000-8000-00805f9b34fb";
+        _caracteristicaTX = "0000" + p_caracteristicaTX + "-0000-1000-8000-00805f9b34fb";
+        _caracteristicaRX = "0000" + p_caracteristicaRX + "-0000-1000-8000-00805f9b34fb";
         _scanTime = p_scanTime;
         status = p_status;
         nomeDispositivo = p_nomeDispositivo;
@@ -52,7 +54,7 @@ public class BleInteradorWin :  IConexao
     }
     public void Start_Unity()
     {
-       
+
     }
 
     public void Subescrever(string _dvcUuid)
@@ -60,11 +62,6 @@ public class BleInteradorWin :  IConexao
         //aqui
         //ATENÇÃO, BLUETOOTH LOW ENERGY SÓ RECEBE 20 BYTES DE CADA VEZ, CONTANDO \r\n
         _deviceUuid = _dvcUuid;
-      //  status.text = "Subescrevendo...";
-      //  BleApi.ScanServices(_deviceUuid);
-      //  BleApi.ScanCharacteristics(_deviceUuid, _servico);
-      //  BleApi.SubscribeCharacteristic(_deviceUuid, _servico, _caracteristica, false);
-       // BleApi.SubscribeCharacteristic(_deviceUuid, "{0000ffe0-0000-1000-8000-00805f9b34fb}", "{0000ffe1-0000-1000-8000-00805f9b34fb}", false);
         Subscreve();
 
     }
@@ -78,7 +75,7 @@ public class BleInteradorWin :  IConexao
         BleApi.ScanCharacteristics(_deviceUuid, _servico);
         await Task.Delay(3000);
         status.text = "Pronto";
-        BleApi.SubscribeCharacteristic(_deviceUuid, _servico, _caracteristica, false);
+        BleApi.SubscribeCharacteristic(_deviceUuid, _servico, _caracteristicaTX, false);
         _isSubscribed = true;
     }
     public void OnScan()//No Android era o ScanForDevices
@@ -156,7 +153,7 @@ public class BleInteradorWin :  IConexao
             BleApi.BLEData res = new BleApi.BLEData();
             while (BleApi.PollData(out res, false))
             {
-                byte[] dados= res.buf[0..res.size];
+                byte[] dados = res.buf[0..res.size];
                 OnReceber(dados);
                 // subcribeText.text = Encoding.ASCII.GetString(res.buf, 0, res.size);
             }
@@ -179,13 +176,13 @@ public class BleInteradorWin :  IConexao
         data.size = (short)payload.Length;
         data.deviceId = _deviceUuid;
         data.serviceUuid = _servico;
-        data.characteristicUuid = _caracteristica;
+        data.characteristicUuid = _caracteristicaRX;
         for (int i = 0; i < payload.Length; i++)
             data.buf[i] = payload[i];
         // no error code available in non-blocking mode
         BleApi.SendData(in data, false);
     }
-    
+
 
     public void OnReceber(byte[] value)
     {
