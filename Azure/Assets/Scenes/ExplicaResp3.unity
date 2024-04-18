@@ -511,7 +511,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Voc\xEA ativou uma nova respira\xE7\xE3o em seu aur\xEB!\nAgora, voc\xEA
-    j\xE1 pode utiliz\xE1-la e aproveitar seus benef\xEDcios! "
+    j\xE1 pode utiliz\xE1-la e aproveitar os benef\xEDcios! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
   m_sharedMaterial: {fileID: -1619115681040311745, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
@@ -894,6 +894,7 @@ GameObject:
   - component: {fileID: 1016287205}
   - component: {fileID: 1016287204}
   - component: {fileID: 1016287206}
+  - component: {fileID: 1016287207}
   m_Layer: 5
   m_Name: Button - voltar
   m_TagString: Untagged
@@ -908,13 +909,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016287202}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.1428566, y: 5.1428566, z: 5.1428566}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949093676}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -426.8387, y: 863}
@@ -940,7 +941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 71002f43eac0a8347aead975f339af3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49cf8e9cbb83e92498a2c6c6dad3fb96, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1001,7 +1002,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1016287204}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1016287207}
+        m_TargetAssemblyTypeName: AureBotoes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ExplicaResp2
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1016287207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016287202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd61dbd95e1f5434e9befc7dafab941a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1404001835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,6 +1173,7 @@ GameObject:
   - component: {fileID: 1598892844}
   - component: {fileID: 1598892843}
   - component: {fileID: 1598892842}
+  - component: {fileID: 1598892845}
   m_Layer: 5
   m_Name: Button - entendi
   m_TagString: Untagged
@@ -1218,7 +1244,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1598892843}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1598892845}
+        m_TargetAssemblyTypeName: AureBotoes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MeuAure
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1598892843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,6 +1295,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598892840}
   m_CullTransparentMesh: 1
+--- !u!114 &1598892845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598892840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd61dbd95e1f5434e9befc7dafab941a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1735642123
 GameObject:
   m_ObjectHideFlags: 0

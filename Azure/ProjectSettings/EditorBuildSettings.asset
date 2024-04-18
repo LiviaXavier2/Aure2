@@ -8,15 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1 - Abertura.unity
     guid: a2e620217657012429111b865d579ace
   - enabled: 1
-    path: Assets/Scenes/3 - Cadastro.unity
-    guid: d4fe98643d675f54d9ff7e6849eea598
-  - enabled: 1
     path: Assets/Scenes/2 - Login.unity
     guid: 96385f9ba2ee9ac4186b6985b1a50951
+  - enabled: 1
+    path: Assets/Scenes/3 - Cadastro.unity
+    guid: d4fe98643d675f54d9ff7e6849eea598
   - enabled: 1
     path: Assets/Scenes/4 - Termos1.unity
     guid: f042f1f8e33dfc04b8b093b5844816cf
@@ -24,13 +24,19 @@ EditorBuildSettings:
     path: Assets/Scenes/5 - Termos2.unity
     guid: 9650618a377dad24396cceea79d59c70
   - enabled: 1
+    path: Assets/Scenes/ConfiguracoesAjuda.unity
+    guid: 02062ea7285c6874fb73217347010b26
+  - enabled: 1
+    path: Assets/Scenes/ConfiguracoesLembretes.unity
+    guid: 15c956d2678db9343b10a12ce4ef52ff
+  - enabled: 1
     path: Assets/Scenes/Configuracoes.unity
-    guid: d4eaf8ab75ff0da4fa449780538a20c7
+    guid: a6b152215b2af784e8d6d189da4144f2
   - enabled: 1
     path: Assets/Scenes/6 - TermosTexto.unity
     guid: fdad2d2dc05d4f144a3c8f2ea4b80bcb
   - enabled: 1
-    path: Assets/Scenes/7 - TutorialBluetooth.unity
+    path: Assets/Scenes/3 - TutorialBluetooth.unity
     guid: 7f0ee6a29466fa6408a23096c5525a5b
   - enabled: 1
     path: Assets/Scenes/8 - TutorialResp.unity
@@ -57,7 +63,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Artigos.unity
     guid: 179fe3b8fa1537249b5be732b6e70298
   - enabled: 1
-    path: Assets/Scenes/ConfiguracoesLembretes.unity
+    path: Assets/Scenes/ConfiguracoesArquivados.unity
     guid: 1eb4ff3be2f150f4281a0bd53348f4d1
   - enabled: 1
     path: Assets/Scenes/ConfiguracoesPerfil.unity
