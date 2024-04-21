@@ -7,7 +7,6 @@ using UnityEngine.Android;
 using UnityEngine.UI;
 using System.Text;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class BleInterador : MonoBehaviour
 {
@@ -90,15 +89,3 @@ public class BleInterador : MonoBehaviour
         status.text = dados;
     }
 }
-
-//Programação da UI aqui - botões
-public class SceneTransition
-{
-    // Função chamada quando um botão é clicado
-    public void ChangeScene(string sceneName)
-    {
-        // Carrega a cena com o nome especificado
-        SceneManager.LoadScene(sceneName);
-    }
-}
-

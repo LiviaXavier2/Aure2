@@ -18,26 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/3 - Cadastro.unity
     guid: d4fe98643d675f54d9ff7e6849eea598
   - enabled: 1
+    path: Assets/Scenes/3 - TutorialBluetooth.unity
+    guid: 7f0ee6a29466fa6408a23096c5525a5b
+  - enabled: 1
     path: Assets/Scenes/4 - Termos1.unity
     guid: f042f1f8e33dfc04b8b093b5844816cf
   - enabled: 1
     path: Assets/Scenes/5 - Termos2.unity
     guid: 9650618a377dad24396cceea79d59c70
   - enabled: 1
-    path: Assets/Scenes/ConfiguracoesAjuda.unity
-    guid: 02062ea7285c6874fb73217347010b26
-  - enabled: 1
-    path: Assets/Scenes/ConfiguracoesLembretes.unity
-    guid: 15c956d2678db9343b10a12ce4ef52ff
-  - enabled: 1
-    path: Assets/Scenes/Configuracoes.unity
-    guid: a6b152215b2af784e8d6d189da4144f2
-  - enabled: 1
     path: Assets/Scenes/6 - TermosTexto.unity
     guid: fdad2d2dc05d4f144a3c8f2ea4b80bcb
-  - enabled: 1
-    path: Assets/Scenes/3 - TutorialBluetooth.unity
-    guid: 7f0ee6a29466fa6408a23096c5525a5b
   - enabled: 1
     path: Assets/Scenes/8 - TutorialResp.unity
     guid: 08adbb65f420a9646ba208a0be858034
@@ -63,8 +54,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Artigos.unity
     guid: 179fe3b8fa1537249b5be732b6e70298
   - enabled: 1
+    path: Assets/Scenes/Configuracoes.unity
+    guid: a6b152215b2af784e8d6d189da4144f2
+  - enabled: 1
+    path: Assets/Scenes/ConfiguracoesAjuda.unity
+    guid: 7ff36892a9140354fa83aa8c178185ea
+  - enabled: 1
     path: Assets/Scenes/ConfiguracoesArquivados.unity
     guid: 1eb4ff3be2f150f4281a0bd53348f4d1
+  - enabled: 1
+    path: Assets/Scenes/ConfiguracoesLembretes.unity
+    guid: 15c956d2678db9343b10a12ce4ef52ff
   - enabled: 1
     path: Assets/Scenes/ConfiguracoesPerfil.unity
     guid: 47fa13b79e6c3ac42b7fa9deade18961
@@ -80,6 +80,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExplicaResp3.unity
     guid: b3c49f4879a570b46bddda37dd4492b5
+  - enabled: 1
+    path: Assets/Scenes/Graficos.unity
+    guid: 6fa9a2e15c57b32409394dd910a1fdee
   - enabled: 1
     path: Assets/Scenes/MeuAure.unity
     guid: 9014b9dfb1a9c754b8be7bcdf2edbd54
