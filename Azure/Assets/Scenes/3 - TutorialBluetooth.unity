@@ -1272,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 540, y: 89.74707}
+  m_AnchoredPosition: {x: 544, y: 92}
   m_SizeDelta: {x: 179, y: 29.868}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &835076228
@@ -2690,7 +2690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 521.5666, y: 852}
+  m_AnchoredPosition: {x: 521.5666, y: 792}
   m_SizeDelta: {x: 155.28, y: 31.894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784128732
@@ -2847,10 +2847,10 @@ MonoBehaviour:
   botaoConectar: {fileID: 803406485}
   botaoDesconectar: {fileID: 1359553662}
   status: {fileID: 835076228}
-  _servico: 0000ffe0-0000-1000-8000-00805f9b34fb
-  _caracteristicaRX: 0000ffe1-0000-1000-8000-00805f9b34fb
-  _caracteristicaTX: 0000ffe2-0000-1000-8000-00805f9b34fb
-  nomeDispositivo: Aure
+  _servico: ffe0
+  _caracteristicaRX: ffe1
+  _caracteristicaTX: ffe2
+  nomeDispositivo: aure
   _scanTime: 10
 --- !u!1 &1972822996
 GameObject:
