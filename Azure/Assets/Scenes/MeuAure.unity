@@ -3395,8 +3395,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283015862
-  m_fontColor: {r: 0.7137255, g: 0.63529414, b: 0.28627452, a: 1}
+    rgba: 4285107347
+  m_fontColor: {r: 0.5764706, g: 0.54901963, b: 0.4117647, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4204,7 +4204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1002954848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1002954850}
+        m_TargetAssemblyTypeName: AureBotoes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Graficos
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1002954848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4796,14 +4808,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.50980395}
+  m_Color: {r: 0.79622644, g: 0.7834568, b: 0.7196084, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 73ceeb96996ba8841be564e0eee52c0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38ae469ee3c24fc49b23767d3498e2b7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
