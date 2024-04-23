@@ -2164,7 +2164,6 @@ GameObject:
   - component: {fileID: 1202433993}
   - component: {fileID: 1202433992}
   - component: {fileID: 1202433991}
-  - component: {fileID: 1202433994}
   - component: {fileID: 1202433995}
   m_Layer: 5
   m_Name: Button - Aure mais
@@ -2236,7 +2235,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1202433992}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1202433995}
+        m_TargetAssemblyTypeName: AureBotoes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MeuAurePlus
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1202433992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,18 +2286,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202433989}
   m_CullTransparentMesh: 1
---- !u!114 &1202433994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202433989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd61dbd95e1f5434e9befc7dafab941a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1202433995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3645,7 +3644,6 @@ GameObject:
   - component: {fileID: 1977629044}
   - component: {fileID: 1977629043}
   - component: {fileID: 1977629042}
-  - component: {fileID: 1977629045}
   - component: {fileID: 1977629046}
   m_Layer: 5
   m_Name: "Button - op\xE7ao (6)"
@@ -3716,7 +3714,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1977629043}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1977629046}
+        m_TargetAssemblyTypeName: AureBotoes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MeuAurePlus
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1977629043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3755,18 +3765,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977629040}
   m_CullTransparentMesh: 1
---- !u!114 &1977629045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977629040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd61dbd95e1f5434e9befc7dafab941a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1977629046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4227,7 +4225,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2108980754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108980756}
+        m_TargetAssemblyTypeName: AureBotoes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MeuAurePlus
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2108980754
 MonoBehaviour:
   m_ObjectHideFlags: 0
