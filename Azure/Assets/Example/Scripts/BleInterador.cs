@@ -77,11 +77,52 @@ public class BleInterador : MonoBehaviour
 
     public void EnviarOn()
     {
-        conexao.Enviar("on\n");
+
+        conexao.Enviar("1");
     }
     public void EnviarOff()
     {
-        conexao.Enviar("off\n");
+        conexao.Enviar("0");
+    }
+
+    public void Enviar_Led1()
+    {
+        conexao.Enviar("2");
+    }
+
+    public void Enviar_Led2()
+    {
+        conexao.Enviar("3");
+    }
+
+    public void Enviar_Led3()
+    {
+        conexao.Enviar("4");
+    }
+
+    public void Enviar_Led4()
+    {
+        conexao.Enviar("5");
+    }
+
+    public void Enviar_Led5()
+    {
+        conexao.Enviar("6");
+    }
+
+    public void Enviar_Respira1()
+    {
+        conexao.Enviar("7");
+    }
+
+    public void Enviar_Respira2()
+    {
+        conexao.Enviar("8");
+    }
+
+    public void Enviar_Respira3()
+    {
+        conexao.Enviar("9");
     }
 
     public void Receber(string dados)

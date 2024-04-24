@@ -3274,11 +3274,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1168439336}
-  m_Father: {fileID: 899375892}
+  m_Father: {fileID: 962134512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -231, y: -707.99994}
+  m_AnchoredPosition: {x: -231.50006, y: 1.9993896}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804689861
@@ -3324,10 +3324,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1168439337}
   toggleTransition: 1
   graphic: {fileID: 405543843}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 962134513}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1949093677}
+        m_TargetAssemblyTypeName: BleInterador, Assembly-CSharp
+        m_MethodName: Enviar_Led1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &825046586
 GameObject:
@@ -3493,11 +3505,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 711869875}
-  m_Father: {fileID: 899375892}
+  m_Father: {fileID: 962134512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 232, y: -709.9998}
+  m_AnchoredPosition: {x: 231.49994, y: -0.000061035156}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825333059
@@ -3543,11 +3555,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711869876}
   toggleTransition: 1
   graphic: {fileID: 1685550676}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 962134513}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1949093677}
+        m_TargetAssemblyTypeName: BleInterador, Assembly-CSharp
+        m_MethodName: Enviar_Led5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &826340286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,12 +3906,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1119587867}
-  - {fileID: 804689860}
-  - {fileID: 1003033439}
-  - {fileID: 1716036064}
-  - {fileID: 1437945688}
-  - {fileID: 825333058}
   - {fileID: 1925325973}
+  - {fileID: 962134512}
   - {fileID: 1505177660}
   - {fileID: 1378111984}
   m_Father: {fileID: 1725643957}
@@ -4043,6 +4063,60 @@ MonoBehaviour:
           m_StringArgument: RespiracaoQuadrada
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &962134511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962134512}
+  - component: {fileID: 962134513}
+  m_Layer: 5
+  m_Name: ToggleGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &962134512
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962134511}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 804689860}
+  - {fileID: 1003033439}
+  - {fileID: 1716036064}
+  - {fileID: 1437945688}
+  - {fileID: 825333058}
+  m_Father: {fileID: 899375892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.50006, y: -709.9997}
+  m_SizeDelta: {x: 543, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &962134513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962134511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &975869769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,11 +4371,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1795172112}
-  m_Father: {fileID: 899375892}
+  m_Father: {fileID: 962134512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000013351, y: -707.9998}
+  m_AnchoredPosition: {x: -0.50004506, y: 1.9998779}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1003033440
@@ -4347,11 +4421,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1795172113}
   toggleTransition: 1
   graphic: {fileID: 435717560}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 962134513}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1949093677}
+        m_TargetAssemblyTypeName: BleInterador, Assembly-CSharp
+        m_MethodName: Enviar_Led3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &1016287202
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,11 +6668,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 229558406}
-  m_Father: {fileID: 899375892}
+  m_Father: {fileID: 962134512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113, y: -709.9998}
+  m_AnchoredPosition: {x: 112.49993, y: -0.000061035156}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437945689
@@ -6632,11 +6718,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 229558407}
   toggleTransition: 1
   graphic: {fileID: 1379201401}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 962134513}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1949093677}
+        m_TargetAssemblyTypeName: BleInterador, Assembly-CSharp
+        m_MethodName: Enviar_Led4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &1505177659
 GameObject:
   m_ObjectHideFlags: 0
@@ -7235,7 +7333,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: RespiracaoRessonante
+          m_StringArgument: MinhaRespiracao
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1653211852
@@ -7622,11 +7720,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 492414994}
-  m_Father: {fileID: 899375892}
+  m_Father: {fileID: 962134512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: -707.9998}
+  m_AnchoredPosition: {x: -115.50007, y: 1.9998779}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1716036065
@@ -7672,11 +7770,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 492414995}
   toggleTransition: 1
   graphic: {fileID: 1754485567}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 962134513}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1949093677}
+        m_TargetAssemblyTypeName: BleInterador, Assembly-CSharp
+        m_MethodName: Enviar_Led2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &1725643956
 GameObject:
   m_ObjectHideFlags: 0
@@ -8691,6 +8801,7 @@ GameObject:
   - component: {fileID: 1949093675}
   - component: {fileID: 1949093674}
   - component: {fileID: 1949093673}
+  - component: {fileID: 1949093677}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8788,6 +8899,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1949093677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949093672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c0b50b8d89fab4ca946f2cb3a57aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botaoConectar: {fileID: 0}
+  botaoDesconectar: {fileID: 0}
+  status: {fileID: 0}
+  _servico: 0000ffe0-0000-1000-8000-00805f9b34fb
+  _caracteristicaRX: 0000ffe1-0000-1000-8000-00805f9b34fb
+  _caracteristicaTX: 0000ffe2-0000-1000-8000-00805f9b34fb
+  nomeDispositivo: 
+  _scanTime: 10
 --- !u!1 &1961754688
 GameObject:
   m_ObjectHideFlags: 0

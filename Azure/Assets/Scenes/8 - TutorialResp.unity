@@ -671,8 +671,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ligar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
+  m_sharedMaterial: {fileID: -1748918839859636041, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -696,8 +696,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9
-  m_fontSizeBase: 9
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1098,9 +1098,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1949093677}
         m_TargetAssemblyTypeName: BleInterador, Assembly-CSharp
-        m_MethodName: EnviarOn
+        m_MethodName: Enviar_Respira1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2225,7 +2225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 540, y: 753}
+  m_AnchoredPosition: {x: 540, y: 790}
   m_SizeDelta: {x: 149.17, y: 27.898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274531275
@@ -2585,6 +2585,7 @@ GameObject:
   - component: {fileID: 1949093675}
   - component: {fileID: 1949093674}
   - component: {fileID: 1949093673}
+  - component: {fileID: 1949093677}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2684,6 +2685,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1949093677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949093672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c0b50b8d89fab4ca946f2cb3a57aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botaoConectar: {fileID: 0}
+  botaoDesconectar: {fileID: 0}
+  status: {fileID: 0}
+  _servico: ffe0
+  _caracteristicaRX: ffe1
+  _caracteristicaTX: ffe2
+  nomeDispositivo: aure
+  _scanTime: 10
 --- !u!1 &2075098615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,7 +2970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf2b5eb9fa5b56946a73b3c9c2a51a61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f93d9c4c78302b469384b4e534e9784, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3026,8 +3047,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Desligar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
+  m_sharedMaterial: {fileID: -1748918839859636041, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3051,8 +3072,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9
-  m_fontSizeBase: 9
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

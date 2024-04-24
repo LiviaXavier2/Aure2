@@ -1297,8 +1297,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Vers\xE3o ESP32"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
+  m_sharedMaterial: {fileID: -1619115681040311745, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3053,8 +3053,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Desconectar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
-  m_sharedMaterial: {fileID: -1619115681040311745, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
+  m_sharedMaterial: {fileID: -1748918839859636041, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3187,8 +3187,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Conectar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
-  m_sharedMaterial: {fileID: -1619115681040311745, guid: 70733b197df0a9a41a3ec79c1630c3dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
+  m_sharedMaterial: {fileID: -1748918839859636041, guid: b101b16a0f2c06844aca346a8e5fcefe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
