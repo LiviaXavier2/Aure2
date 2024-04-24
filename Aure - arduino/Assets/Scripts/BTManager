@@ -1,0 +1,85 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using ArduinoBluetoothAPI;
+
+
+public class BTManager : MonoBehaviour {
+
+    // Use thir for initialization
+
+    string message;
+
+    private BluetoothHelper BTHelper;
+
+    void Start() {
+        try {
+            BTHelper = BluetoothHelper.GetInstance("MyBluetoothDevice");
+            if (BTHelper.isDeviceFound()) // if we have already paired with the device
+                if (BTHelper.Connect()) //if we manage to connect successfully
+                    BTHelper.StartListening(); // we start listening for incoming messages
+        }catch(BluetoothHelper.BluetoothNotEnabledException ex){
+            // bluetooth is not enabled
+        }catch(BluetoothHelper.BluetoothNotSupportedException ex){
+            //
+        }catch(BluetoothHelper.BluetoothNotReadyException ex){
+            // cannot connect to bluetooth, attempting failed
+        }
+
+        // NOE LETS TRY Blinking leds
+        StartCoroutine(blinkLED());
+    }
+
+    IEnumerator blinkLED() 
+    {
+        byte[] turn_on = new byte[]{(int)'E', /*E stands for enable */ 2};
+        byte[] turn_off = new byte[]{(int)'D', /*E stands for enable */ 2};
+        while(true)
+        {
+            for(byte i=2; i<6; i++)
+            {
+                turn_on[1] = i;
+                BTHelper.SendData(turn_on);
+                yield return new WaitForSeconds(0.5f);
+            }
+
+            for(byte i=2; i<6; i++)
+            {
+                turn_off[1] = i;
+                BTHelper.SendData(turn_off);
+                yield return new WaitForSeconds(0.5f);
+            }
+
+            // with this we are blinkind 4 led respective connected to pin 2 3 4 5 
+        }
+    }
+    // Update is called once per frame
+    void Update() {
+        if(BTHelper!=null)
+        {
+            if(BTHelper.Available)
+            {
+                message = BTHelper.Read()
+                // receive incoming messages
+
+                // lets get some feedback from the arduino
+
+                if(message[0] == 'S') // S stands for success 
+                    Debug.Log("Action Success : " + message);
+                else
+                    Debug.Log("Action Fail : " + message);
+            }
+        }
+    }
+
+    void OnGUI()
+    {
+        BTHelper.DrawGUI(); // this function is used to emulate receiving messages from arduino while you are testing the application on unity editor
+    }
+
+    void OnDestroy() 
+    {
+        if(BTHelper!=null)
+            BTHelper.StopListening();
+    }
+}

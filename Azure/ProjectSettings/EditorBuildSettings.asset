@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/1 - Abertura.unity
     guid: a2e620217657012429111b865d579ace
   - enabled: 1
-    path: Assets/Scenes/PerguntasFrequentes.unity
-    guid: 6f5374b2ec9e3a149ace6b51f9ac865d
-  - enabled: 1
     path: Assets/Scenes/2 - Login.unity
     guid: 96385f9ba2ee9ac4186b6985b1a50951
   - enabled: 1
@@ -74,6 +71,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ConfiguracoesPrivacidade.unity
     guid: ee6502ca5b86aac4cad1ad2d9b219b97
+  - enabled: 1
+    path: Assets/Scenes/PerguntasFrequentes.unity
+    guid: 6f5374b2ec9e3a149ace6b51f9ac865d
   - enabled: 1
     path: Assets/Scenes/ExplicaResp1.unity
     guid: 974a8e21c39bc2744a5a28810cf08e27

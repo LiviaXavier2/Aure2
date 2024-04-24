@@ -3227,10 +3227,10 @@ MonoBehaviour:
   botaoConectar: {fileID: 0}
   botaoDesconectar: {fileID: 0}
   status: {fileID: 0}
-  _servico: 0000ffe0-0000-1000-8000-00805f9b34fb
-  _caracteristicaRX: 0000ffe1-0000-1000-8000-00805f9b34fb
-  _caracteristicaTX: 0000ffe2-0000-1000-8000-00805f9b34fb
-  nomeDispositivo: 
+  _servico: ffe0
+  _caracteristicaRX: ffe1
+  _caracteristicaTX: ffe2
+  nomeDispositivo: aure
   _scanTime: 10
 --- !u!1 &2075098615
 GameObject:
