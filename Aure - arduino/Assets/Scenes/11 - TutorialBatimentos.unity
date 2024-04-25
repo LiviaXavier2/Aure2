@@ -2700,10 +2700,9 @@ MonoBehaviour:
   botaoConectar: {fileID: 0}
   botaoDesconectar: {fileID: 0}
   status: {fileID: 0}
+  nomeDispositivo: HC-05
   _servico: ffe0
-  _caracteristicaRX: ffe1
-  _caracteristicaTX: ffe2
-  nomeDispositivo: aure
+  _caracteristica: ffe1
   _scanTime: 10
 --- !u!1 &1964581346
 GameObject:

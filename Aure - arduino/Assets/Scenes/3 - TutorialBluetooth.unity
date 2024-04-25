@@ -2847,10 +2847,9 @@ MonoBehaviour:
   botaoConectar: {fileID: 803406485}
   botaoDesconectar: {fileID: 1359553662}
   status: {fileID: 835076228}
+  nomeDispositivo: HC-05
   _servico: ffe0
-  _caracteristicaRX: ffe1
-  _caracteristicaTX: ffe2
-  nomeDispositivo: aure
+  _caracteristica: ffe1
   _scanTime: 10
 --- !u!1 &1972822996
 GameObject:
@@ -2907,10 +2906,9 @@ MonoBehaviour:
   botaoConectar: {fileID: 1972822999}
   botaoDesconectar: {fileID: 1972822999}
   status: {fileID: 0}
-  _servico: 0000ffe0-0000-1000-8000-00805f9b34fb
-  _caracteristicaRX: 0000ffe1-0000-1000-8000-00805f9b34fb
-  _caracteristicaTX: 0000ffe2-0000-1000-8000-00805f9b34fb
   nomeDispositivo: aure
+  _servico: 0000ffe0-0000-1000-8000-00805f9b34fb
+  _caracteristica: ffe1
   _scanTime: 10
 --- !u!114 &1972822999
 MonoBehaviour:

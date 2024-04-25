@@ -3227,7 +3227,7 @@ MonoBehaviour:
   botaoConectar: {fileID: 0}
   botaoDesconectar: {fileID: 0}
   status: {fileID: 0}
-  nomeDispositivo: aure
+  nomeDispositivo: HC-05
   _servico: ffe0
   _caracteristica: ffe1
   _scanTime: 10
